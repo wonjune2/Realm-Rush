@@ -7,9 +7,9 @@ public class GridManager : MonoBehaviour
     [SerializeField] Vector2Int gridSize;
     Dictionary<Vector2Int, Node> grid = new Dictionary<Vector2Int, Node>();
     public Dictionary<Vector2Int, Node> Grid { get { return grid; } }
-    private void Awake()
+    void Awake()
     {
-        CreateGrid();
+        CreateGrid();    
     }
 
     public Node GetNode(Vector2Int coordinates)
@@ -18,7 +18,6 @@ public class GridManager : MonoBehaviour
         {
             return grid[coordinates];
         }
-
         return null;
     }
 
@@ -26,11 +25,11 @@ public class GridManager : MonoBehaviour
     {
         for(int x = 0; x < gridSize.x; x++)
         {
-            for(int y = 0; y < gridSize.y; y++)
+            for (int y = 0; y < gridSize.y; y++)
             {
                 Vector2Int coordinates = new Vector2Int(x, y);
                 grid.Add(coordinates, new Node(coordinates, true));
-                
+
             }
         }
     }

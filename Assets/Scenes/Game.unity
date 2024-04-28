@@ -22708,7 +22708,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7502788618512472311, guid: 17a805f619b535b428ef029c5bb502f0, type: 3}
       propertyPath: poolSize
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7502788618512472311, guid: 17a805f619b535b428ef029c5bb502f0, type: 3}
       propertyPath: spawnTIme
